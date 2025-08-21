@@ -49,7 +49,7 @@ module ALU(in1,in2,out,op,rst,clk);
         12: out= {out[6:0],out[7]};
         13: out= {out[0],out[7:1]};
         14: out= {out[3:0],out[7:4]};
-        
+        default: out=out;
     endcase
     end
 endmodule
